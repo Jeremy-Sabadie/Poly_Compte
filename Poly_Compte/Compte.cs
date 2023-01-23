@@ -8,12 +8,15 @@
         private Client holder { get; set; }
         private DateTime creationDate { get; set; }
         private float sold { get; set; }
-        public Compte(int number, Client holder, DateTime creationDate, float sold)
+        public Compte(int number, Client holder, float sold)
         {
             this.number = number;
             this.holder = holder;
-            this.creationDate = creationDate;
+            this.creationDate = DateTime.Now;
             this.sold = sold;
+            Console.WriteLine($"compte n°: {number}");
+            Console.WriteLine($"Appartient à:{holder}");
+        }
             public float addMoney(float mount)
             {
                 sold = sold + mount;
@@ -28,6 +31,13 @@
             {
                 Console.WriteLine($"Le solde du compten°: {number} est de:{sold}$");
             }
+        public void infoPrint()
+        {
+            Console.WriteLine($"Numéro du compte:{number}.");
+            Console.WriteLine($"Titulaire ducompte:{holder}.");
+            Console.WriteLine($"Date d'ouverture:{creationDate}.");
+            Console.WriteLine($"Solde actuel du compte:{sold}.");
+        }
         }
     }
 }
