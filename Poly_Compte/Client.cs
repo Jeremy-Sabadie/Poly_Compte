@@ -10,7 +10,7 @@ namespace Poly_Compte
     {
     private string firstName { get; set; }
         private string Name { get; set; }
-        private List<Compte> comptes = new List<Compte> { get;set; }
+        private List<Compte> comptes = new List<Compte>() { get;set; }
 
     }
 }

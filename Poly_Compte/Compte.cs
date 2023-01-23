@@ -16,6 +16,7 @@
             this.sold = sold;
             Console.WriteLine($"compte n°: {number}");
             Console.WriteLine($"Appartient à:{holder}");
+            holder.comptes.add(Compte)
         }
             public float addMoney(float mount)
             {
