@@ -10,13 +10,14 @@
         private float sold { get; set; }
         public Compte(int number, Client holder, float sold)
         {
-            this.number = number;
+            this.number = number+1;
             this.holder = holder;
             this.creationDate = DateTime.Now;
             this.sold = sold;
             Console.WriteLine($"compte n°: {number}");
             Console.WriteLine($"Appartient à:{holder}");
             holder.comptes.add(Compte)
+                
         }
             public float addMoney(float mount)
             {
