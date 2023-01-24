@@ -2,14 +2,15 @@
 {
     internal class CompteCourant : Compte
     {
+        private int Number;
         private int DecouvertAutorise;
-        public CompteCourant(int number, Client holder, decimal sold, int DecouvertAutorise)
-             : base(number, holder, sold)
+        public CompteCourant(int number, Client holder)
+             : base(number, holder)
         {
             DecouvertAutorise = 300;
-            number = number;
+            Number += 1;
             holder = holder;
-            sold = sold;
+            sold = 100;
         }
 
     }
