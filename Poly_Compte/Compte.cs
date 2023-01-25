@@ -2,15 +2,16 @@
 
 internal class Compte
 {
-
+    private int Sold = 0;
+    private static int Count = 0;
 
     private static int Number { get; set; }
     private Client holder { get; set; }
     private DateTime creationDate { get; set; }
     private decimal sold { get; set; }
-    public Compte(int number, Client holder, decimal sold)
+    public Compte(int number, Client holder)
     {
-        Number += 1;
+        Count += 1;
         this.holder = holder;
         this.creationDate = DateTime.Now;
         this.sold = 0;

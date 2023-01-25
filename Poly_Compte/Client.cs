@@ -29,8 +29,13 @@ internal class Client
     {
         comptes.Add(compte);
     }
+
+    public override string? ToString()
+    {
+        return $"{Name}";
+    }
 }
-}
+
 
 
 

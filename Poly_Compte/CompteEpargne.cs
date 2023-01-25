@@ -7,7 +7,7 @@
         private int MinimalSold { get; set; }
         private decimal Sold { get; set; }
         public CompteEpargne(int number, Client holder, decimal sold, int MinimalSold, double TauxInterets)
-            : base(number, holder, sold)
+            : base(number, holder)
         {
             MinimalSold = 150;
             number = number;
